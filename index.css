@@ -1,0 +1,317 @@
+body {
+    font-family: Helvetica;
+    margin: 0%;
+    padding: 0%;
+    background-color: #d4e2f0 !important;
+}
+
+h1 {
+    color: #003366;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#nome_azienda {
+    color: #003366;
+}
+
+h2 {
+    color: #003366;
+}
+
+#titolo2 {
+    font-family: Helvetica;
+    color: #003366;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#presentazione_wrapper {
+    margin-top: 200px;
+}
+
+#presentazione {
+    font-size: larger;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    line-height: 200%;
+    margin-bottom: 10%;
+}
+
+.p_format {
+    color: #003366;
+    text-align: justify;
+    padding: 20px;
+    font-family: Helvetica;
+}
+
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+}
+
+option {
+    padding: 8px;
+}
+
+#logo {
+    width: 100px;
+}
+
+
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+}
+
+#logo_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#info_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.opzione {
+    color: #003366;
+    margin: 20px;
+    font-family: Helvetica;
+}
+
+#layout {
+    width: 100%;
+}
+
+#contact_wrapper {
+    margin-bottom: 10%;
+    color: #003366;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #003366
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #003366;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #003366 !important;
+}
+
+.container_sconti {
+    margin: auto;
+    text-justify: auto;
+    justify-content: center;
+    margin-top: 70px;
+    color: #003366 !important;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: transparent;
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    text-justify: auto;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 500px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.card-title {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #003366;
+}
+
+.card-text {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #003366 !important;
+    line-height: 50%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.col {
+    text-align: center;
+    background-color: transparent;
+}
+
+span {
+    text-decoration: underline;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #003366;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* SELECT DEI PACCHETTI*/
+#select_pac {
+    margin-bottom: 20px;
+}
+
+#select_pac_title {
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* footer */
+.pr-xl-4 {
+
+    margin-top: 10%;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+    color: #ffffff;
+}
+
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+#footer_wrapper {
+    width: 100% !important;
+}
+
+.logo_lingua {
+    width: 50px;
+}
+
+.container_footer {
+    width: 100% !important;
+
+}
+
+.row-wrapper {
+    display: flex;
+}
+
+#prenotazione_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}

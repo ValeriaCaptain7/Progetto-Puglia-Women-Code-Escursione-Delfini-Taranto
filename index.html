@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/d0ca4a10fa.js" crossorigin="anonymous"></script>
+
+
+
+        <title>DolphinTheExperience</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Path del file css che si trova all'interno della stessa directory-->
+        <link rel="stylesheet" href="index.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+            id="bootstrap-css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+
+        <script>
+            $(document).ready(function () {
+                $('#prenotazione_pacchetti').hide();
+                $('#prenota').click(function () {
+                    $('#prenotazione_pacchetti').show();
+                });
+
+            });
+        </script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>
+
+        <!-- SCRIPT LINGUA -->
+        <script>
+            // Versione in inglese
+            $(document).ready(function () {
+                $('#unionjack').click(function () {
+                    $('#vieni_a_trovarci').text('Visit Us')
+                    $('#contattaci').text('Contact Us')
+                    $('#lasciaci_una_recensione').text('Write a Review')
+                    $('#titolo2').text('About Us')
+                    $('#presentazione').text('Founded back in (now) 1989, from a project aimed at safeguarding the Cetacea species that inhabit our beautiful sea, we have evolved over the years to offer an excellent service that protects the environment. Thanks to our guides, you will be able to observe the elegance and charm of the Dolphins so closely that you will be completely captivated.')
+                    $('#durata1').text('DURATION: 90 min')
+                    $('#difficoltafacile1').text('DIFFICULTY: easy')
+                    $('#prezzo1').text('COST: 15€ pp')
+                    $('#persone1').text('PEOPLE: max. 50')
+                    $('#durata2').text('DURATION: 120 min')
+                    $('#difficoltafacile2').text('DIFFICULTY: easy')
+                    $('#prezzo2').text('COST: 30€ pp')
+                    $('#persone2').text('PEOPLE: max. 20')
+                    $('#durata3').text('DURATION: 30 min')
+                    $('#difficoltamedia3').text('DIFFICULTY: medium')
+                    $('#prezzo3').text('COST: 60€ pp')
+                    $('#persone3').text('PEOPLE: max. 6')
+                    $('#sconto1').text('Are you planning an excursion for at least 9 of you?')
+                    $('#sconto2').text('GROUP OFFER 10% DISCOUNT')
+                    $('#sconto3').text('If you book a BOAT WATCHING or SWIM WITH DOLPHINS package, you save 10% on your group reservation. Get in touch with us to secure your advantage!')
+                    $('#contact_wrapper').text('Contact us for asking any information')
+                    $('#nome_trad').text('Name')
+                    $('#fname').text('Your name')
+                    $('#cognome_trad').text('Surname')
+                    $('#lname').text('Your surname')
+                    $('#email').text('Email')
+                    $('#ogg_trad').text('Your message')
+                    $('#subject').text('Write here your message')
+                    $('#invia').text('Send')
+                    $('#contatti_footer').text('Contacts')
+                    $('#indirizzo_footer').text('Address')
+                    $('#phone').text('Phone')
+                })
+            })
+
+        </script>
+
+        <script>
+            // Versione in italiano
+            $(document).ready(function () {
+                $('#italianflag').click(function () {
+                    $('#vieni_a_trovarci').text('Vieni a trovarci')
+                    $('#contattaci').text('Contattaci')
+                    $('#lasciaci_una_recensione').text('Lasciaci una recensione')
+                    $('#titolo2').text('Chi siamo')
+                    $('#presentazione').text('Nati nel lontano (ormai) 1989, da un progetto volto a salvaguardare la specie Cetacea che abbia il Nostro splendido mare, ci siamo evoluti negli anni per offrire un servizio eccellente che salvaguardi il nostro ambiente. Grazie alle nostre guide potrete osservare da vicino in tuta la loro eleganza i Delfini, tanto da rimanere completamente affascinati.')
+                    $('#durata1').text('DURATA: 90 min')
+                    $('#difficoltafacile1').text('DIFFICOLTÀ: facile')
+                    $('#prezzo1').text('PREZZO: 15€ pax')
+                    $('#persone1').text('PERSONE: max. 50')
+                    $('#durata2').text('DURATA: 120 min')
+                    $('#difficoltafacile2').text('DIFFICOLTÀ: facile')
+                    $('#prezzo2').text('PREZZO: 30€ pax')
+                    $('#persone2').text('PERSONE: max. 20')
+                    $('#durata3').text('DURATA: 30 min')
+                    $('#difficoltamedia3').text('DIFFICOLTÀ: media')
+                    $('#prezzo3').text('PREZZO: 60€ pax')
+                    $('#persone3').text('PERSONE: max. 6')
+                    $('#sconto1').text('Hai in programma di fare una escursione e siete almeno in 9 ?')
+                    $('#sconto2').text('OFFERTA COMITIVA 10% DI SCONTO')
+                    $('#sconto3').text('Per chi sceglie di prenotare un pacchetto BOAT WATCHING o SWIM WITH DOLPHINS, 10% di sconto sul prezzo complessivo complessivo. Contattaci per assicurarti il tuo vantaggio!')
+                    $('#contact_wrapper').text('Contattaci per richiedere informazioni:')
+                    $('#nome_trad').text('Nome')
+                    $('#fname').text('Il tuo nome')
+                    $('#cognome_trad').text('Cognome')
+                    $('#lname').text('Il tuo cognome')
+                    $('#email').text('Email')
+                    $('#ogg_trad').text('La tua email')
+                    $('#subject').text('Oggetto')
+                    $('#invia').text('Invia')
+                    $('#contatti_footer').text('Contatti')
+                    $('#indirizzo_footer').text('Indirizzo')
+                    $('#phone').text('Telefono')
+
+
+                })
+            }) 
+        </script>
+
+
+    </head>
+
+    <body>
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>
+
+
+
+        <!--Testata home del sito, oltre al nome dell'azienda saranno disponibili varie opzioni-->
+        <!-- A.B | N.G. -->
+
+        <div id="header">
+            <div id="logo_wrapper">
+                <a href="index.html"><img id="logo" src="Immagini_utilizzate/logo_azienda.png" alt="logo.jpg"></a>
+                <h1 id="nome_azienda">DOLPHIN EXPERIENCE</h1>
+            </div>
+
+            <p></p>
+            <div id="info_wrapper">
+                <a id="vieni_a_trovarci" class="opzione"
+                    href="https://www.google.com/maps/place/Via+delle+Ceramiche,+74121+Taranto+TA/@40.4578886,17.2489035,162m/data=!3m2!1e3!4b1!4m20!1m13!4m12!1m3!2m2!1d17.2486605!2d40.4578052!1m6!1m2!1s0x1341c723f26515dd:0x43cbc2a69eb87ab8!2sIonian+Sea!2m2!1d18.8076195!2d37.7884803!3e2!3m5!1s0x134702d38c295905:0x6174e04cb1f2b0bd!8m2!3d40.4578886!4d17.2495472!16s%2Fg%2F11g637r00y!5m1!1e4"
+                    target="_blank">
+                    Vieni a trovarci</a>
+                <a id="contattaci" class="opzione" href="#contattaci_section">Contattaci</a>
+                <a id="lasciaci_una_recensione" class="opzione" href="review.html">Lasciaci una
+                    recensione</a>
+                <!-- inserimento bottone home -->
+                <div class="container-lingue">
+                    <img id="italianflag" class="logo_lingua" src="immagini_utilizzate/italia.png" alt="italian flag">
+                    <img id="unionjack" class="logo_lingua" src="immagini_utilizzate/inghilterra1.png" alt="union jack">
+                </div>
+            </div>
+
+        </div>
+        <img id="layout" src="immagini_utilizzate/super_delfino.jpg">
+
+        <!-- Spazio dedicato alla presentazione dell'azienda -->
+        <!-- R.B.-->
+        <div id="presentazione_wrapper">
+            <h2 id="titolo2">Chi siamo</h2>
+            <p class="p_format" id="presentazione">Nati nel lontano (ormai) 1989, da un progetto volto a salvaguardare
+                la specie Cetacea che abita il Nostro splendido mare, ci siamo evoluti
+                negli anni per offrire un servizio eccellente che salvaguardi l’ambiente.
+                <br>
+                Grazie alle nostre guide potrete osservare da vicino l’eleganza dei
+                Delfini tanto da rimanere completamente affascinati.
+            </p>
+        </div>
+
+        <!-- R.B. | R.C. | V.P. -->
+        <div class="card-group">
+            <div class="card">
+
+                <h5 class="card-title">DOLPHINS WATCHING</h5>
+                <img src="Immagini_utilizzate/pacchetto1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text"></p>
+                    <div class="row">
+                        <p id="durata" class="card-text"><strong><i class="fa-regular fa-clock"></i> DURATA:</strong> 90
+                            min
+                        </p>
+                        <p id="difficoltafacile" class="card-text"><strong><i
+                                    class="fa-solid fa-temperature-quarter"></i>
+                                DIFFICOLTÀ:</strong>
+                            facile</p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <p id="prezzo1" class="card-text"><strong><i class="fa-solid fa-euro-sign"></i> PREZZO:</strong>
+                            15€
+                            pax</p>
+                        <p id="persone" class="card-text"><strong><i class="fa-solid fa-people-group"></i>
+                                PERSONE:</strong>
+                            max: 50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h5 class="card-title">BOAT WATCHING</h5>
+                <img src="Immagini_utilizzate/pacchetto2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <p class="card-text"></p>
+                    <div class="row">
+                        <p id="durata" class="card-text"><strong><i class="fa-regular fa-clock"></i> DURATA:</strong>
+                            120
+                            min</p>
+                        <p id="difficoltafacile" class="card-text"><strong><i
+                                    class="fa-solid fa-temperature-quarter"></i>
+                                DIFFICOLTÀ:</strong>
+                            facile</p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <p id="prezzo2" class="card-text"><strong><i class="fa-solid fa-euro-sign"></i> PREZZO:</strong>
+                            30€
+                            pax</p>
+                        <p id="persone" class="card-text"><strong><i class="fa-solid fa-people-group"></i>
+                                PERSONE:</strong>
+                            max: 20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h5 class="card-title">SWIM WITH DOLPHINS</h5>
+                <img src="Immagini_utilizzate/pacchetto3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                    <div class="row">
+                        <p id="durata" class="card-text"><strong><i class="fa-regular fa-clock"></i> DURATA:</strong> 30
+                            min
+                        </p>
+                        <p id="difficoltamedia" class="card-text"><strong><i class="fa-solid fa-temperature-half"></i>
+                                DIFFICOLTÀ:</strong> media
+                        </p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <p id="prezzo3" class="card-text"><strong><i class="fa-solid fa-euro-sign"></i> PREZZO:</strong>
+                            60€
+                            pax</p>
+                        <p id="persone" class="card-text"><strong><i class="fa-solid fa-people-group"></i>
+                                PERSONE:</strong>
+                            max: 6</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PRENOTAZIONE FORM -->
+        <div id="prenotazione_wrapper" name="prenotazione_wrapper">
+            <div id="select_pac">
+                <form action="#">
+                    <div id="select_pac_title"> <label for="pren">Prenotazione</label></div>
+                    <select name="prenotation" id="pren">
+                        <option value="opzioni_pacchetti">opzioni:</option>
+                        <option value="pacchetto1">Watching dolphins</option>
+                        <option value="pacchetto2">Boat watching</option>
+                        <option value="pacchetto3">Swim with dolphins</option>
+                    </select>
+                </form>
+            </div>
+
+            <button id="prenota">Prenota Qui</button>
+            <div id="prenotazione_pacchetti">
+                <form name="form1" method="post" action="">
+                    <table>
+                        <tr valign="top">
+                            <td>
+                                <div>PRENOTA LA TUA ESPERIENZA</div>
+                                <br>
+                            </td>
+                            <br>
+                            <td>
+                                <input type="text" id="datepicker">
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <td>&nbsp;&nbsp;</td>
+                            <td>
+                                <input type="submit" name="Submit" value="Invia">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- <br> <hr> -->
+        <!-- Sezione sconti dei pacchetti -->
+        <!-- R.B | R.C | V.P -->
+
+        <div class="container_sconti">
+            <div id="sconto1" class="col align-self-center">
+                Hai in programma di fare un'escursione e siete almeno in 9?
+            </div>
+            <br>
+            <div id="sconto2" class="col align-self-center">
+                <strong> <i class="fa-regular fa-thumbs-up"></i> OFFERTA COMITIVA 10% DI SCONTO</strong>
+            </div>
+            <br>
+            <div id="sconto3" class="col align-self-center">
+                Per chi sceglie di prenotare un pacchetto BOAT WATCHING o SWIM WITH DOLPHINS, <span>10% di sconto</span>
+                sul <span>prezzo complessivo</span>
+                . Contattaci per assicurarti il tuo vantaggio!
+            </div>
+        </div>
+
+        <!-- Il cliente deve avere la possibilità di contattare l'azienda;
+        di seguito il codice per implementare la sezione "contattaci" -->
+        <!-- A.B. | N.G -->
+        <div id="contattaci_section" name="contattaci_section" class="container2">
+            <h2 id="contact_wrapper">Contattaci per richiedere informazioni:</h2>
+            <form action="">
+
+                <label id="nome_trad" for="fname">Nome</label>
+                <input type="text" id="fname" name="firstname" placeholder="Il tuo nome..">
+
+                <label id="cognome_trad" for="lname">Cognome</label>
+                <input type="text" id="lname" name="lastname" placeholder="Il tuo cognome..">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="e_mail" placeholder="La tua email..">
+
+                <label id="ogg_trad" for="subject">Oggetto</label>
+                <textarea id="subject" name="subject" placeholder="Scrivi qualcosa.." style="height:200px"></textarea>
+
+                <!--<input type="invia" value="Invia">-->
+                <tr valign="top">
+                    <td>&nbsp;&nbsp;</td>
+                    <td>
+                        <input type="submit" name="Submit" value="Invia">
+                    </td>
+                </tr>
+
+            </form>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div id="footer_wrapper">
+            <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+                <div class="container_footer">
+                    <div class="row-wrapper">
+                        <div class="col-md-4 col-xl-5">
+                            <div class="pr-xl-4">
+                                <p id="footer1">Dolphin Experience S.r.l. Riserva naturale di Taranto. <br> P.Iva
+                                    1234567890
+                                    |
+                                    fax 010/123456
+                                </p>
+                                <p class="rights"><span>© </span><span class="copyright-year">2023</span><span>
+                                    </span><span>DolphinExperience</span><span> - </span><span>All Rights
+                                        Reserved.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 id="contatti_footer">Contatti</h5>
+                            <dl class="contact-list">
+                                <dt id="indirizzo_footer">Indirizzo:</dt>
+                                <dd id="indirizzo_footer_2">Via delle Ceramiche, 74121 Taranto TA</dd>
+                            </dl>
+                            <dl class="contact-list">
+                                <dt>Email:</dt>
+                                <dd><a href="mailto:#">info@dolphintaranto.com</a></dd>
+                            </dl>
+                            <dl class="contact-list">
+                                <dt id="phone">telefono:</dt>
+                                <dd>1.555.652.258 | 1.55.652.268
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <h5>Links</h5>
+                            <ul class="nav-list">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </footer>
+        </div>
+
+
+        <!-- BISCOTTINI -->
+        <script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"></script>
+    </body>
+
+</html>
